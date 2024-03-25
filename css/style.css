@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Barlow", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.6rem;
+}
+
+a,
+a:link,
+a:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #222529;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Barlow Condensed", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.h5 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+}
+
+.container {
+  max-width: 126.4rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.btn,
+.btn:link,
+.btn:visited,
+.btn-light,
+.btn-light:link,
+.btn-light:visited {
+  position: relative;
+  padding: 1.6rem 3.8rem;
+  z-index: 10;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+.btn::before, .btn::after,
+.btn:link::before,
+.btn:link::after,
+.btn:visited::before,
+.btn:visited::after,
+.btn-light::before,
+.btn-light::after,
+.btn-light:link::before,
+.btn-light:link::after,
+.btn-light:visited::before,
+.btn-light:visited::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  background: #e9a233;
+}
+.btn::after,
+.btn:link::after,
+.btn:visited::after,
+.btn-light::after,
+.btn-light:link::after,
+.btn-light:visited::after {
+  width: 0;
+  transition: all 0.2s;
+}
+.btn:hover::after,
+.btn:link:hover::after,
+.btn:visited:hover::after,
+.btn-light:hover::after,
+.btn-light:link:hover::after,
+.btn-light:visited:hover::after {
+  width: 100%;
+  background: #000;
+}
+
+.btn-light,
+.btn-light:link,
+.btn-light:visited {
+  color: #000;
+}
+.btn-light:hover,
+.btn-light:link:hover,
+.btn-light:visited:hover {
+  color: #fff;
+}
+.btn-light::before,
+.btn-light:link::before,
+.btn-light:visited::before {
+  background: #fff;
+}
+
+.sub-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 1.8px;
+  color: #e9a233;
+  text-transform: uppercase;
+}
+
+.section-title {
+  margin-bottom: 1.2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 4.8rem;
+  font-weight: bold;
+  letter-spacing: 0.096px;
+  color: #171717;
+  text-transform: uppercase;
+}
+
+header {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo-container {
+  width: 40rem;
+  height: 100%;
+  padding: 2rem 5rem;
+  background: #000;
+}
+header .logo-container a {
+  height: 100%;
+  display: block;
+}
+header .logo-container a .logo {
+  display: block;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header .navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+}
+header .navbar ul .nav-link {
+  height: 100%;
+}
+header .header-action {
+  padding: 2rem 5rem;
+}
+
+.hero {
+  background-image: url("../assets/images/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero .hero-content {
+  width: 80%;
+  padding: 25rem 0;
+  color: #fff;
+}
+.hero .hero-content .title {
+  font-size: 10rem;
+  line-height: 9rem;
+  margin-bottom: 3rem;
+}
+.hero .hero-content p {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.hero .hero-content .btn-group {
+  display: flex;
+  gap: 2rem;
+}
+
+.about .about-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: flex-end;
+  gap: 6rem;
+}
+.about .about-content .agency {
+  position: relative;
+  padding: 4.5rem;
+}
+.about .about-content .agency .bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about .about-content .agency .agency-list li {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 0;
+  border-bottom: 1px solid rgba(92, 92, 92, 0.459);
+}
+.about .about-content .agency .agency-list li .icon {
+  width: 7.5rem;
+  height: 7.5rem;
+  background: #e9a233;
+  border-radius: 50%;
+}
+.about .about-content .agency .agency-list li .h5 {
+  color: #fff;
+}
+.about .about-content .agency .agency-list li:last-of-type {
+  border: none;
+}
+.about .about-content .about-text-box {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+}
+.about .about-content .about-text-box img {
+  aspect-ratio: 1/1;
+}
+.about .about-content .about-text-box .desc {
+  line-height: 30.4px;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  color: #717070;
+}
+.about .about-content .about-text-box .user {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.about .about-content .about-text-box .user img {
+  width: 5.4rem;
+  height: 5.4rem;
+  border-radius: 50%;
+  border: 2px solid #e9a233;
+}
+.about .about-content .about-text-box .user h5 {
+  font-size: 2rem;
+}
+.about .about-content .about-text-box .user p {
+  color: #717070;
+}/*# sourceMappingURL=style.css.map */
