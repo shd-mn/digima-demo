@@ -494,7 +494,7 @@ h6 {
 
 .our-services {
   position: relative;
-  background: #171717;
+  background: #000;
   background-image: url("../assets/images/bg-pattern1.png");
   background-position: center;
   background-size: cover;
@@ -953,7 +953,7 @@ h6 {
   border-radius: 50%;
   transition: all 0.3s;
 }
-.we-help-content .features:hover span {
+.we-help-content .features div:hover span {
   transform: rotate(360deg);
   color: #e9a233;
 }

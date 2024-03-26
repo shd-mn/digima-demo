@@ -281,12 +281,10 @@
         .item-content::after {
             transition: all 0.2s;
             opacity: 0;
-            background-image: linear-gradient(
-                45deg,
-                $primary,
-                transparent,
-                transparent
-            );
+            background-image: linear-gradient(45deg,
+                    $primary,
+                    transparent,
+                    transparent);
         }
 
         .icon-box {
@@ -377,7 +375,7 @@
 // ========OUR SERVICES========
 .our-services {
     position: relative;
-    background: $headings-color;
+    background: $black;
     background-image: url('../assets/images/bg-pattern1.png');
     background-position: center;
     background-size: cover;
@@ -511,7 +509,7 @@
     }
 }
 
-//  ========OUR SERVICES========
+//  ========OUR FEEDBACKS========
 .our-feedback {
     padding: 12rem 0;
     background: $headings-color;
@@ -891,11 +889,9 @@
                     width: 100px;
                     height: 100px;
                     border-radius: 50%;
-                    background: radial-gradient(
-                            closest-side,
+                    background: radial-gradient(closest-side,
                             $primary 90%,
-                            transparent 10% 100%
-                        ),
+                            transparent 10% 100%),
                         conic-gradient($white 85%, rgba(253, 207, 121, 0.548) 0);
                 }
             }
@@ -947,12 +943,12 @@
                 border-radius: 50%;
                 transition: all 0.3s;
             }
-        }
 
-        &:hover {
-            span {
-                transform: rotate(360deg);
-                color: $primary;
+            &:hover {
+                span {
+                    transform: rotate(360deg);
+                    color: $primary;
+                }
             }
         }
     }
